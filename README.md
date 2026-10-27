@@ -1,12 +1,12 @@
 # Playwright Tool Shop Tests
 
-[![Playwright Tests](https://github.com/GeneRiabchenko/playwright-practice-test-automation/actions/workflows/playwright-tests.yml/badge.svg)](https://github.com/GeneRiabchenko/playwright-practice-test-automation/actions/workflows/playwright-tests.yml)
+[![Build and API Tests](https://github.com/GeneRiabchenko/playwright-practice-test-automation/actions/workflows/playwright-tests.yml/badge.svg)](https://github.com/GeneRiabchenko/playwright-practice-test-automation/actions/workflows/playwright-tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Java 17](https://img.shields.io/badge/Java-17-blue)
 
 UI and API test automation for [practicesoftwaretesting.com](https://practicesoftwaretesting.com/) (a demo e-commerce "Tool Shop") and its API, written in Java with Playwright.
 
-**Latest test report:** https://generiabchenko.github.io/playwright-practice-test-automation/
+**Sample Serenity report:** https://generiabchenko.github.io/playwright-practice-test-automation/
 
 The project started as a follow-along for the Udemy course
 [Mastering Modern Test Automation with Playwright in Java](https://www.udemy.com/course/mastering-modern-test-automation-with-playwright-in-java/).
@@ -25,7 +25,8 @@ Everything beyond the course basics is my own work: Serenity BDD reporting, Cucu
 - **Cucumber** - Gherkin feature tests (`src/test/resources/features`)
 - **Serenity BDD** - reporting with `@Feature` / `@Story` grouping and `@Step` annotations
 - **AssertJ / JUnit assertions**, **Datafaker** for random test data
-- **GitHub Actions** - runs the suite on every push/PR and publishes the report to GitHub Pages
+- **GitHub Actions** - compiles the project and runs the API-only tests on every push/PR
+- **TeamCity** - runs the full suite (UI + Cucumber) and keeps the Serenity report and failure traces as build artifacts
 
 ## Design notes
 
@@ -77,6 +78,7 @@ mvn verify -Dtags="@smoke"
 ## Known limitations
 
 - The tests run against a **public demo site**, so they depend on its availability and data. Occasionally the site changes its data between requests, which can cause a rare flaky failure (e.g. an "invalid product id" response while adding to the cart).
+- The demo site sits behind Cloudflare, which serves a challenge (HTTP 403) to GitHub-hosted runners. That is why the GitHub Actions workflow only builds the project and runs the API tests, and the UI/Cucumber suite runs from a regular IP (locally or in TeamCity).
 - This is a learning project, not a production framework.
 
 ## License
