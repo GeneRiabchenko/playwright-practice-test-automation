@@ -6,6 +6,7 @@ import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 
 import static com.playwright.toolshop.testresources.Resources.BROWSER_LAUNCH_OPTION;
+import static com.playwright.toolshop.testresources.Resources.HEADLESS;
 
 public class PlaywrightCucumberFixtures {
     private static final ThreadLocal<Playwright> playwright
@@ -18,7 +19,7 @@ public class PlaywrightCucumberFixtures {
     private static final ThreadLocal<Browser> browser = ThreadLocal.withInitial(() ->
             playwright.get().chromium().launch(
                     new BrowserType.LaunchOptions()
-                            .setHeadless(false)
+                            .setHeadless(HEADLESS)
                             .setArgs(BROWSER_LAUNCH_OPTION)
             )
     );

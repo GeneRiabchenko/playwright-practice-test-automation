@@ -45,7 +45,7 @@ public class LoginPageTests extends BaseTestRunner {
 
     @Story("Logging in with valid credentials")
     @Test
-    void validUserShouldNotBeLoggedIn(){
+    void existingUserShouldBeLoggedIn(){
         User validUser = new User(null,
                 null,
                 null,
@@ -60,7 +60,7 @@ public class LoginPageTests extends BaseTestRunner {
 
     @Story("Logging in with valid credentials")
     @Test
-    void newValidUserShouldNotBeLoggedIn(){
+    void newlyRegisteredUserShouldBeLoggedIn(){
         User validUser = UserBuilder.aUser().build();
         userAPIClient.createUserViaAPI(validUser);
         loginPage.loginAs(validUser);

@@ -12,6 +12,7 @@ import java.util.HashMap;
 
 import static com.playwright.toolshop.testresources.Resources.BASE_API_URL;
 import static com.playwright.toolshop.testresources.Resources.BROWSER_LAUNCH_OPTION;
+import static com.playwright.toolshop.testresources.Resources.HEADLESS;
 
 @ExtendWith(TestWatcherExtension.class)
 public class BaseAPITestRunner extends Tracer implements TestWatcher {
@@ -24,7 +25,7 @@ public class BaseAPITestRunner extends Tracer implements TestWatcher {
     protected static ThreadLocal<Browser> browser = ThreadLocal.withInitial(() ->
             playwright.get().chromium().launch(
                     new BrowserType.LaunchOptions()
-                            .setHeadless(true)
+                            .setHeadless(HEADLESS)
                             .setArgs(BROWSER_LAUNCH_OPTION)
             )
     );

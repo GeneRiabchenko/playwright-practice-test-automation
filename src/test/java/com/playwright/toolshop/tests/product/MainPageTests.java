@@ -66,7 +66,7 @@ public class MainPageTests extends BaseTestRunner {
 
         @Story("Viewing product details from the catalog")
         @Test
-        @DisplayName("Out of stock products should not be filtered by search")
+        @DisplayName("Product page should open and show the product badges")
         void checkThatProductPageIsOpenedAndBadgesAreShown(){
             mainPage.clickElementByText("Bolt Cutters");
             PlaywrightAssertions.assertThat(mainPage.getElementByAltText("Bolt Cutters")).isVisible();
@@ -136,7 +136,7 @@ public class MainPageTests extends BaseTestRunner {
 
         @Story("Adding products to the cart")
         @Test
-        @DisplayName("Clicking on Page logo redirects to main page")
+        @DisplayName("Adding a product should show the toaster message and then hide it")
         void shouldDisplayToasterMessage(){
             cartWorkflow.addProductToCart("Bolt Cutters");
             mainPage.waitForTheToasterMessage("Product added to shopping cart.");
@@ -145,6 +145,7 @@ public class MainPageTests extends BaseTestRunner {
 
         @Story("Adding products to the cart")
         @Test
+        @DisplayName("Adding a product should update the cart item count")
         void shouldUpdateCartItemCount(){
             cartWorkflow.addProductToCart("Bolt Cutters");
             mainPage.checkCartItemCount("1");
