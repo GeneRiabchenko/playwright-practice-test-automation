@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="7" failures="0" name="Shopping Cart" skipped="0" tests="7" time="79.76" timestamp="2026-10-27 09:31:35"><testcase name="Actor adds a single product to the cart"><error message="Error {&#10;  message='Timeout 10000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 10000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)&#10;    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;product-name\&quot;]&quot;).getByText(&quot;Combination Pliers&quot;, new Locator.GetByTextOptions().setExact(true))&#10;" type="com.microsoft.playwright.TimeoutError">Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+</error><system-err>Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+
+com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+com.microsoft.playwright.Locator.click(Locator.java:2413)
+com.playwright.toolshop.pages.MainPage.openProductByName(MainPage.java:171)
+com.playwright.toolshop.cucumber.stepdefinitions.CartStepDefinitions.actorAddsToTheCart(CartStepDefinitions.java:35)
+</system-err></testcase><testcase name="Actor continues shopping from the cart"><error message="Error {&#10;  message='Timeout 10000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 10000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)&#10;    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;product-name\&quot;]&quot;).getByText(&quot;Combination Pliers&quot;, new Locator.GetByTextOptions().setExact(true))&#10;" type="com.microsoft.playwright.TimeoutError">Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+</error><system-err>Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+
+com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+com.microsoft.playwright.Locator.click(Locator.java:2413)
+com.playwright.toolshop.pages.MainPage.openProductByName(MainPage.java:171)
+com.playwright.toolshop.cucumber.stepdefinitions.CartStepDefinitions.actorAddsToTheCart(CartStepDefinitions.java:35)
+</system-err></testcase><testcase name="Actor increases the quantity of a product in the cart"><error message="Error {&#10;  message='Timeout 10000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 10000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)&#10;    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;product-name\&quot;]&quot;).getByText(&quot;Combination Pliers&quot;, new Locator.GetByTextOptions().setExact(true))&#10;" type="com.microsoft.playwright.TimeoutError">Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+</error><system-err>Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+
+com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+com.microsoft.playwright.Locator.click(Locator.java:2413)
+com.playwright.toolshop.pages.MainPage.openProductByName(MainPage.java:171)
+com.playwright.toolshop.cucumber.stepdefinitions.CartStepDefinitions.actorAddsToTheCart(CartStepDefinitions.java:35)
+</system-err></testcase><testcase name="Actor proceeds to checkout as a guest"><error message="Error {&#10;  message='Timeout 10000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 10000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)&#10;    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;product-name\&quot;]&quot;).getByText(&quot;Combination Pliers&quot;, new Locator.GetByTextOptions().setExact(true))&#10;" type="com.microsoft.playwright.TimeoutError">Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+</error><system-err>Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+
+com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+com.microsoft.playwright.Locator.click(Locator.java:2413)
+com.playwright.toolshop.pages.MainPage.openProductByName(MainPage.java:171)
+com.playwright.toolshop.cucumber.stepdefinitions.CartStepDefinitions.actorAddsToTheCart(CartStepDefinitions.java:35)
+</system-err></testcase><testcase name="Actor removes one product and keeps the others"><error message="Error {&#10;  message='Timeout 10000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 10000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)&#10;    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;product-name\&quot;]&quot;).getByText(&quot;Combination Pliers&quot;, new Locator.GetByTextOptions().setExact(true))&#10;" type="com.microsoft.playwright.TimeoutError">Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+</error><system-err>Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+
+com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+com.microsoft.playwright.Locator.click(Locator.java:2413)
+com.playwright.toolshop.pages.MainPage.openProductByName(MainPage.java:171)
+com.playwright.toolshop.cucumber.stepdefinitions.CartStepDefinitions.actorAddsToTheCart(CartStepDefinitions.java:35)
+</system-err></testcase><testcase name="Actor adds multiple different products to the cart"><error message="Error {&#10;  message='Timeout 10000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 10000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)&#10;    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;product-name\&quot;]&quot;).getByText(&quot;Combination Pliers&quot;, new Locator.GetByTextOptions().setExact(true))&#10;" type="com.microsoft.playwright.TimeoutError">Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+</error><system-err>Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+
+com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+com.microsoft.playwright.Locator.click(Locator.java:2413)
+com.playwright.toolshop.pages.MainPage.openProductByName(MainPage.java:171)
+com.playwright.toolshop.cucumber.stepdefinitions.CartStepDefinitions.actorAddsToTheCart(CartStepDefinitions.java:35)
+</system-err></testcase><testcase name="Actor removes the only product from the cart"><error message="Error {&#10;  message='Timeout 10000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 10000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)&#10;    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;product-name\&quot;]&quot;).getByText(&quot;Combination Pliers&quot;, new Locator.GetByTextOptions().setExact(true))&#10;" type="com.microsoft.playwright.TimeoutError">Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+</error><system-err>Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-test=\"product-name\"]").getByText("Combination Pliers", new Locator.GetByTextOptions().setExact(true))
+
+com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+com.microsoft.playwright.Locator.click(Locator.java:2413)
+com.playwright.toolshop.pages.MainPage.openProductByName(MainPage.java:171)
+com.playwright.toolshop.cucumber.stepdefinitions.CartStepDefinitions.actorAddsToTheCart(CartStepDefinitions.java:35)
+</system-err></testcase></testsuite>
