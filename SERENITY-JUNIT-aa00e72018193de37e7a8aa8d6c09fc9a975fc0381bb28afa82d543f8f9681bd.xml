@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="5" failures="0" name="com.playwright.toolshop.tests.registration.RegistrationPageTests.PhoneNumberValidation" skipped="0" tests="5" time="31.07" timestamp="2026-10-27 09:32:20"><testcase classname="com.playwright.toolshop.tests.registration.RegistrationPageTests$PhoneNumberValidation" name="Formatted phone numbers should be rejected"><error message="&#10;The following 2 assertions failed:&#10;1) Error {&#10;  message='Timeout 30000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1063:23)&#10;    at FrameDispatcher.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:169:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;first-name\&quot;]&quot;)&#10;&#10;2) Error {&#10;  message='Timeout 30000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)&#10;    at Frame.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1063:23)&#10;    at FrameDispatcher.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:169:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;first-name\&quot;]&quot;)&#10;&#10;" type="net.thucydides.model.domain.MultipleAssertionErrors">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="5" failures="0" name="com.playwright.toolshop.tests.registration.RegistrationPageTests.PhoneNumberValidation" skipped="0" tests="5" time="31.14" timestamp="2026-10-27 09:45:09"><testcase classname="com.playwright.toolshop.tests.registration.RegistrationPageTests$PhoneNumberValidation" name="Formatted phone numbers should be rejected"><error message="&#10;The following 2 assertions failed:&#10;1) Error {&#10;  message='Timeout 30000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-16426823497240114638/package/lib/server/progress.js:78:26)&#10;    at Frame.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/frames.js:1063:23)&#10;    at FrameDispatcher.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/frameDispatcher.js:169:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;first-name\&quot;]&quot;)&#10;&#10;2) Error {&#10;  message='Timeout 30000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-16426823497240114638/package/lib/server/progress.js:78:26)&#10;    at Frame.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/frames.js:1063:23)&#10;    at FrameDispatcher.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/frameDispatcher.js:169:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;internal:attr=[data-test=\&quot;first-name\&quot;]&quot;)&#10;&#10;" type="net.thucydides.model.domain.MultipleAssertionErrors">
 The following 2 assertions failed:
 1) Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
-    at Frame.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1063:23)
-    at FrameDispatcher.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:169:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-16426823497240114638/package/lib/server/progress.js:78:26)
+    at Frame.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/frames.js:1063:23)
+    at FrameDispatcher.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("internal:attr=[data-test=\"first-name\"]")
@@ -17,11 +17,11 @@ Call log:
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
-    at Frame.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1063:23)
-    at FrameDispatcher.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:169:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-16426823497240114638/package/lib/server/progress.js:78:26)
+    at Frame.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/frames.js:1063:23)
+    at FrameDispatcher.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("internal:attr=[data-test=\"first-name\"]")
@@ -32,11 +32,11 @@ The following 2 assertions failed:
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
-    at Frame.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1063:23)
-    at FrameDispatcher.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:169:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-16426823497240114638/package/lib/server/progress.js:78:26)
+    at Frame.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/frames.js:1063:23)
+    at FrameDispatcher.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("internal:attr=[data-test=\"first-name\"]")
@@ -45,11 +45,11 @@ Call log:
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-9080197986388558229/package/lib/server/progress.js:78:26)
-    at Frame.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/frames.js:1063:23)
-    at FrameDispatcher.fill (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/frameDispatcher.js:169:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-9080197986388558229/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-16426823497240114638/package/lib/server/progress.js:78:26)
+    at Frame.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/frames.js:1063:23)
+    at FrameDispatcher.fill (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/frameDispatcher.js:169:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-16426823497240114638/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("internal:attr=[data-test=\"first-name\"]")
