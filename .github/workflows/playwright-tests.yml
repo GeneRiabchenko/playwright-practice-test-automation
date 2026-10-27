@@ -1,8 +1,10 @@
-name: Playwright Tests
+name: Build and API Tests
 
+# GitHub-hosted runners get a Cloudflare challenge (HTTP 403) from practicesoftwaretesting.com,
+# so the UI tests cannot run here. This workflow compiles the project and runs the API-only
+# tests; the full suite (UI + Cucumber) is executed in TeamCity.
 permissions:
-  contents: write
-  pages: write
+  contents: read
 
 # Trigger the workflow on every push to any branch
 on:
@@ -14,7 +16,7 @@ on:
       - '**'  # Run on every pull request for any branch
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -61,22 +63,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven
 
-      # Step 8: Run Maven to execute Playwright tests
-      - name: Run Playwright Tests
-        run: mvn verify
-
-      # Step 9: Archive traces
-      - name: Archive traces
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: traces
-          path: target/traces/*.zip
-
-      # Step 10: Deploy serenity report to GitHub Pages
-      - name: Deploy serenity report to Github Pages
-        if: always() # Runs this step if tests failed
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/site/serenity
+      # Step 8: Compile everything and run the API-only tests
+      - name: Build and run API tests
+        run: mvn -B verify -Dit.test=ContactAPITest
