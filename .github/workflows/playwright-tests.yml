@@ -74,8 +74,9 @@ jobs:
           path: target/traces/*.zip
 
       # Step 10: Deploy serenity report to GitHub Pages
+      # Only from master, so feature branches and PRs never overwrite the public report
       - name: Deploy serenity report to Github Pages
-        if: always() # Runs this step if tests failed
+        if: always() && github.ref == 'refs/heads/master' # Also runs when tests failed
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
