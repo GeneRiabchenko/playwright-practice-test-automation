@@ -9,7 +9,10 @@ public class Resources {
     public static String SIGN_IN_URL = String.format("%sauth/login", MAIN_URL);
     public static String CART_URL = String.format("%scheckout", MAIN_URL);
     public static String REGISTER_URL = String.format("%sauth/register", MAIN_URL);
-    public static String SAMPLE_FILE_URI = "C:/Users/Jeka/IdeaProjects/Playwright/src/test/java/com/playwright/toolshop/testresources/data/sample-data.txt";
+    public static String SAMPLE_FILE_URI = "src/test/java/com/playwright/toolshop/testresources/data/sample-data.txt";
+
+    // Headless by default (CI has no display); run headed locally with: mvn verify -Dheadless=false
+    public static boolean HEADLESS = Boolean.parseBoolean(System.getProperty("headless", "true"));
 
     public static String PRODUCTS_REQUEST_URL_WITH_PARAMETERS = "**/products?**";
     public static String PRODUCTS_REQUEST_URL = "**/products";
