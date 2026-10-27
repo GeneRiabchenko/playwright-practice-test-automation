@@ -32,7 +32,10 @@ public abstract class BaseTestRunner extends Tracer implements TestWatcher {
 
     protected BrowserContext browserContext;
     protected APIRequestContext requestContext;
-    protected static Page page;
+    // Instance field, not static: tests run in parallel and each one needs its own Page.
+    // A shared static Page let one thread swap in another thread's Page (which belongs to a
+    // different Playwright connection), causing "Cannot find command to respond" and hangs.
+    protected Page page;
 
     @BeforeEach
     public void setupRequestContext() {
